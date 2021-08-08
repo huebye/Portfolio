@@ -1,28 +1,28 @@
-const flightPath = {
-    curviness: 1.35, //adds curviness to the movement of the image
+const flightPathNav = {
+    curviness: 0,
     autoRotate: false,
     values: [
-        {x: 1000, y: 200}
+        {x: -260,y: -200}
     ],
 };
 
 
-const tween = new TimelineLite();
+const tween1 = new TimelineLite();
 
-tween.add(
-    TweenLite.to('.mars', 2, {
-        bezier: flightPath,
-        ease: Power1.easeInOut,
-        opacity: 1
+
+tween1.add(
+    TweenLite.to('nav', 25, {
+        bezier: flightPathNav,
+        ease: Power1.easeInOut
     })
-);
+)
 
 const controller = new ScrollMagic.Controller();
 
-const scene = new ScrollMagic.Scene({
-    triggerElement: '#animation',
-    duration: 500,
-    triggerHook: 0.5,
+const sceneNav = new ScrollMagic.Scene({
+    triggerElement: '#header_trigger',
+    duration: "100%",
+    triggerHook: 0,
 })
-.setTween(tween)
-.addTo(controller);
+.setTween(tween1)
+.addTo(controller)
