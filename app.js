@@ -9,7 +9,7 @@ function getRightFlightPath() {
             curviness: 0,
             autoRotate: false,
             values: [
-                {x: -260,y: -100}
+                {x: -260,y: -200}
             ],
         };
         return flightPathNav;
@@ -18,7 +18,7 @@ function getRightFlightPath() {
             curviness: 0,
             autoRotate:false,
             values:[
-                {x: -89 ,y: -150}
+                {x: -90 ,y: -200}
             ],
         };
         return flightPathNav;
@@ -27,7 +27,7 @@ function getRightFlightPath() {
             curviness: 0,
             autoRotate:false,
             values:[
-                {x: -44 ,y: -150}
+                {x: -54 ,y: -210}
             ],
         };
         return flightPathNav;
