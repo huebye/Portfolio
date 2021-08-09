@@ -36,7 +36,7 @@ header {
 nav {
     position: fixed;
     top: 23%;
-    right: 75%;
+    right: 77%;
     margin-left: 415px;
     z-index: 900;
     max-width: 250px;
@@ -53,6 +53,7 @@ nav > a {
 nav > a > span {
     border: 2px;
     width: 100px;
+    font-size: 135;
 }
 
 .a_text_home {
@@ -129,11 +130,9 @@ section {
 
 .about {
     display: flex;
-    position: relative;
     margin: 0 ;
     margin-top: 300px;
     background-color: white;
-    border-radius: 4px;
 }
 
 .about_text {
@@ -379,23 +378,173 @@ section {
 }
 
 
-@media (min-width:1201px) { 
-
+@media (max-width:1500px) { 
+    nav {
+        position: fixed;
+        top: 23%;
+        right: 82%;
+        z-index: 900;
+        max-width: 250px;
+        max-height: 400px;
+        font-family: Paytone One, sans-serif;
+    }
   }
   
-  @media (max-width: 1200px) and (min-width:901px) { /* <- 4-3  hexagons per row */
+  @media (max-width: 1340px) { 
+    nav {
+        transform: scale(0.81   );
+        right: 83%;
+    }
+    .second > .grid_work {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        gap: 15px 15px; 
+        grid-template-areas: 
+          ". . ."
+          ". . .";
+        max-width: 68%;
+        height: 90%;
+        border-radius: 30px;
+    }
+  }
 
+  
+  @media (max-width: 1299px) { 
+        nav {
+            transform: scale(0.84);
+            right: 82%;
+        }
+    .second > .grid_work {
+        display: grid; 
+        grid-template-columns: 1fr 1fr ; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 15px 15px; 
+        grid-template-areas: 
+          ". . "
+          ". . ";
+        max-width: 22%;
+        height: 80%;
+        border-radius: 30px;
+    }
+
+    .grid_tools > div > img {
+        height: 40px;
+    }
+
+    .second > .grid_tools {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+        gap: 25px; 
+        grid-template-areas: 
+          ". . .";
+          height: 100px;
+    }
+
+    header {
+        font-size: 29px;
+        margin-left: 60px;
+    }
+
+    #header_name {
+        font-size: 26px;
+    }
   }
   
-  @media (max-width: 900px) and (min-width:601px) { /* <- 3-2  hexagons per row */
+  @media (max-width: 1098px) { /* <- 2-1  hexagons per row */
+    .a_link_work {
+        position: relative;
+        top: -150px;
+        left: 164px;
+        width: auto;
+    }
 
+    .a_link_contact {
+        position: relative;
+        top: -300px;
+        left: 110px;
+    }
+
+    .a_link_home {
+        position: relative;
+        top: 0;
+        left: 110px;
+    }
+
+    
+    nav {
+        transform: scale(0.71);
+        right: 89%;
+        top: 18%;
+    }
+
+    header {
+        font-size: 20px;
+        margin-left: 100px;
+    }
+    #header_name {
+        font-size: 24px;
+    }
+
+    .social_media {
+        display: block;
+        position: sticky;
+        top: 40%;
+        left: 95%;
+        height: 0;
+        width: 0;
+        z-index: 1000;
+    }
   }
   
-  @media (max-width: 600px) { /* <- 2-1  hexagons per row */
+  @media (max-width: 998px) {
+    .first {
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
 
+    .about {
+        margin-top: -50px;
+    }
+
+    .about_text {
+        margin-top: 100px;
+    }
+   
   }
-  
-  @media (max-width: 400px) {
 
+  @media (max-width: 898px) {
+    .second > .grid_work {
+        display: grid; 
+        grid-template-columns: 1fr ; 
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+        gap: 15px 15px; 
+        grid-template-areas: 
+          ". "
+          ". ";
+        max-width: 62%;
+        height: 80%;
+        border-radius: 30px;
+    }
+   nav {
+    transform: scale(0.68);
+   }
+  }
+
+
+  @media (max-width: 375px) {
+    .second > .grid_work {
+        display: grid; 
+        grid-template-columns: 1fr ; 
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+        gap: 15px 15px; 
+        grid-template-areas: 
+          ". "
+          ". ";
+        max-width: 62%;
+        height: 80%;
+        border-radius: 30px;
+    }
    
   }
