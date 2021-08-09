@@ -1,19 +1,6 @@
 window.addEventListener('resize', getRightFlightPath());
 window.onresize = function(){ location.reload(); }
 
-//window.onresize = function navBarResponsive(){
- //   let navBar = document.querySelector('#hex_span');
- //   let width = window.innerWidth;
- //   console.log(width);
- //   if(width < 1300) {
-//        navBar.style.fontSize = "120px";
-//    } else if (width > 1300) {
- //       navBar.style.fontSize = "135";
-//    } 
- //   location.reload();
-//}
-
-
 function getRightFlightPath() {
     x = window.innerWidth;
     console.log(x);
@@ -35,12 +22,21 @@ function getRightFlightPath() {
             ],
         };
         return flightPathNav;
-    } else if (x < 1090) {
+    } else if (x < 1090 && x > 765) {
         var flightPathNav = {
             curviness: 0,
             autoRotate:false,
             values:[
-                {x: -54 ,y: -150}
+                {x: -44 ,y: -150}
+            ],
+        };
+        return flightPathNav;
+    } else if (x < 765) {
+        var flightPathNav = {
+            curviness: 0,
+            autoRotate:false,
+            values:[
+                {x: 0 ,y: -150}
             ],
         };
         return flightPathNav;

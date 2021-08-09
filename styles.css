@@ -100,7 +100,7 @@ nav > a > span {
 }
 
 .social_media {
-    display: block;
+    display: none;
     position: sticky;
     top: 40%;
     left: 97%;
@@ -485,16 +485,6 @@ section {
     #header_name {
         font-size: 24px;
     }
-
-    .social_media {
-        display: block;
-        position: sticky;
-        top: 40%;
-        left: 95%;
-        height: 0;
-        width: 0;
-        z-index: 1000;
-    }
   }
   
   @media (max-width: 998px) {
@@ -528,12 +518,25 @@ section {
         border-radius: 30px;
     }
    nav {
-    transform: scale(0.68);
+    transform: scale(0.71);
    }
+   .grid_tools > div > img {
+    height: 35px;
+}
+
+.second > .grid_tools {
+      margin-top: 100px;
+}
   }
 
+  @media (max-width: 765px) {
+    nav {
+        transform: scale(0.71);
+        right: 96%;
+       }
+  }
 
-  @media (max-width: 375px) {
+  @media (max-width: 600px) {
     .second > .grid_work {
         display: grid; 
         grid-template-columns: 1fr ; 
@@ -545,6 +548,66 @@ section {
         max-width: 62%;
         height: 80%;
         border-radius: 30px;
+    }
+
+    .grid_tools > div > img {
+        height: 30px;
+    }
+
+    nav {
+    transform: scale(0.59);
+    right: 96%;
+   }
+
+    header {
+        font-size: 20px;
+        margin-left: 100px;
+    }
+    #header_name {
+        font-size: 24px;
+    }
+
+    .social_media {
+        display: none;
+        visibility:hidden;
+    }
+   
+  }
+
+
+  @media (max-width: 385px) {
+    .second > .grid_work {
+        display: grid; 
+        grid-template-columns: 1fr ; 
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+        gap: 15px 15px; 
+        grid-template-areas: 
+          ". "
+          ". ";
+        max-width: 62%;
+        height: 80%;
+        border-radius: 30px;
+    }
+
+    .grid_tools > div > img {
+        height: 30px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    header {
+        font-size: 20px;
+        margin-left: 60px;
+    }
+    #header_name {
+        font-size: 24px;
+    }
+
+    .social_media {
+        display: none;
+        visibility:hidden;
     }
    
   }
