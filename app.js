@@ -8,11 +8,20 @@ function getRightFlightPath() {
             curviness: 0,
             autoRotate: false,
             values: [
-                {x: -260,y: -200}
+                {x: -220,y: -200}
             ],
         };
         return flightPathNav;
-    } else if (x < 1500 && x > 1090) {
+    } else if (x < 1550 && x > 1350) {
+        var flightPathNav = {
+             curviness: 0,
+             autoRotate:false,
+             values:[
+                 {x: -120 ,y: -200}
+             ],
+         };
+         return flightPathNav;
+     } else if (x < 1350 && x > 1090) {
        var flightPathNav = {
             curviness: 0,
             autoRotate:false,
