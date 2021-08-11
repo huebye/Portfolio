@@ -13,6 +13,7 @@
 body {
     font-family: Paytone One, sans-serif;
     overflow: auto;
+    height: 100vH;
 }
 
 header {
