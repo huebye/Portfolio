@@ -3,7 +3,6 @@ window.onresize = function(){ location.reload(); }
 
 function getRightFlightPath() {
     x = window.innerWidth;
-    console.log(x);
     if (x > 1500) {
        var  flightPathNav = {
             curviness: 0,
