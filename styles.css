@@ -347,6 +347,7 @@ section {
 }
 
 .grid1 > h3 {
+    text-align: center;
     font-size: larger;
 }
 
@@ -491,6 +492,13 @@ section {
     #header_name {
         font-size: 24px;
     }
+
+    .third > .form > h2 {
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 26px;
+    }
   }
   
   @media (max-width: 1058px) {
@@ -541,6 +549,12 @@ section {
         transform: scale(0.71);
         right: 96%;
        }
+       .third > .form > h2 {
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 22px;
+    }
   }
 
   @media (max-width: 660px) {
@@ -574,6 +588,12 @@ section {
         font-size: 24px;
     }
 
+    .third > .form > h2 {
+        color: black;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+    }
    
   }
 
@@ -608,4 +628,7 @@ section {
         font-size: 24px;
     }
    
+    .third > .form > h2 {
+        display: none;
+    }
   }
