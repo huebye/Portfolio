@@ -13,14 +13,14 @@
 body {
     font-family: Paytone One, sans-serif;
     overflow: auto;
-    min-height: 100vH;
+    height: 100vH;
 }
 
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100Vh;
+    height: 100vH;
     font-family: inherit;
     letter-spacing: 10px;
     font-family: 'Bangers', cursive;
@@ -35,8 +35,6 @@ header {
 }
 
 nav {
-    display: block;
-    min-height: 100vH;
     position: fixed;
     top: 23%;
     right: 77%;
@@ -98,18 +96,17 @@ nav > a > span {
 
 
 section {
-    display: block;
     min-height: 100vH;
-    overflow: auto;
+    min-width: 100vw;
 }
-
 .first {
     display: flex;
     justify-content: center;
     text-align: center;
     background-color: white;
     color:black;
-    height: auto;
+    height: 100%;
+    width: 100%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
@@ -628,19 +625,4 @@ section {
     .third > .form > h2 {
         display: none;
     }
-  }
-
-  @media (max-height: 600px) {
-      body {
-          min-height: 20vH;
-      }
-
-      .first {
-          margin-bottom: 200px;
-      }
-      nav {
-        position: fixed;
-        top: 23%;
-        right: 77%;
-      }
   }
