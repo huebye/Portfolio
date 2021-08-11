@@ -111,8 +111,8 @@ section {
     text-align: center;
     background-color: white;
     color:black;
-    height: 100%;
-    width: 100%;
+    min-height: 100vH;
+    min-width: 100vw;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
