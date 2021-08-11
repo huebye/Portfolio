@@ -1,5 +1,20 @@
 window.addEventListener('resize', getRightFlightPath());
 window.onresize = function(){ location.reload(); }
+var elements = document.querySelector('body')
+var windowheight = window.innerHeight + "px";
+
+fullheight(elements);
+function fullheight(elements) {
+    for(let el in elements){
+        if(elements.hasOwnProperty(el)){
+            elements[el].style.height = windowheight;
+        }
+    }
+}
+
+window.onresize = function(event){
+     fullheight(elements);
+}
 
 function getRightFlightPath() {
     x = window.innerWidth;
