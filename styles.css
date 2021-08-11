@@ -262,7 +262,7 @@ section {
     background: linear-gradient(
     to top,
     rgba(255, 255, 255, 0.96),
-    rgba(98, 212, 222, 0.5));  
+    rgba(98, 212, 222, 0.76));  
 }
 
 #pokedex > a > .overlay > .text > h3 {
