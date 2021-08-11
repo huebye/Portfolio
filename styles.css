@@ -597,20 +597,20 @@ section {
 
 
   @media (max-width: 385px) {
-      header {
-          margin-top: -60%;
-      }
-
-      .first {
-          margin-top: -60%;
-      }
-
-      .section {
-          text-align: center;
-      }
+    body {
+        display: block;
+        align-items: center;
+    }
+    header {
+        min-height:300px;
+    }
+    .about > img {
+        width: 180px;
+        height: 180px;
+    }
 
       .about_text {
-        font-size: 18px;
+        font-size: 15px;
       }
     .second > .grid_work {
         display: grid; 
@@ -623,6 +623,7 @@ section {
         max-width: 62%;
         height: auto;
         border-radius: 30px;
+        justify-content: center;
     }
 
     .grid_tools > div > img {
