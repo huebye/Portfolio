@@ -13,8 +13,6 @@
 body {
     font-family: Paytone One, sans-serif;
     overflow: auto;
-    min-width: 100vw;
-    min-height: 100vh;
 }
 
 header {
@@ -113,8 +111,8 @@ section {
     text-align: center;
     background-color: white;
     color:black;
-    min-height: 100vH;
-    min-width: 100vW;
+    height: 100%;
+    width: 100%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
