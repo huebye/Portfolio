@@ -96,9 +96,8 @@ nav > a > span {
 
 
 section {
-    display: block;
     min-height: 100vH;
-    width: 100%;
+    min-width: 100vw;
 }
 .first {
     display: flex;
