@@ -149,6 +149,7 @@ section {
     color: #7DFFB1;
     font-family: 'Bangers', cursive;
     letter-spacing: 5px;
+    font-size: larger;
 }
 
 .text_simple {
@@ -226,12 +227,12 @@ section {
 
 .second {
     display: flex;
+    flex: 1;
     justify-content: center;
     align-items: center;
     background-color: white;
     scroll-behavior: smooth;
     flex-direction: column;
-    min-height: 100vH;
 }
 
 .second > .grid_tools {
@@ -253,7 +254,7 @@ section {
       ". . ."
       ". . .";
     min-width: 65%;
-    height: 90%;
+    height: auto;
     border-radius: 30px;
 }
 
@@ -267,7 +268,6 @@ section {
 #pokedex > a > .overlay > .text > h3 {
     letter-spacing: 3px;
 }
-
 
 #myFlix {
     background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
@@ -410,7 +410,7 @@ section {
           ". . ."
           ". . .";
         max-width: 68%;
-        height: 90%;
+        height: auto;
         border-radius: 30px;
     }
   }
@@ -430,7 +430,7 @@ section {
           ". . "
           ". . ";
         max-width: 22%;
-        height: 80%;
+        height: auto;
         border-radius: 30px;
     }
 
@@ -520,7 +520,7 @@ section {
           ". "
           ". ";
         max-width: 62%;
-        height: 80%;
+        height: auto;
         border-radius: 30px;
     }
    nav {
@@ -553,7 +553,7 @@ section {
           ". "
           ". ";
         max-width: 62%;
-        height: 80%;
+        height: auto;
         border-radius: 30px;
     }
 
@@ -588,7 +588,7 @@ section {
           ". "
           ". ";
         max-width: 62%;
-        height: 80%;
+        height: auto;
         border-radius: 30px;
     }
 
