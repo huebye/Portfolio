@@ -44,14 +44,11 @@ nav {
     font-family: Paytone One, sans-serif;
 }
 
+
 nav > a {
     text-decoration: none;
 }
 
-nav > a > span {
-    border: 2px;
-    font-size: 135;
-}
 
 .a_text_home {
     font-size: 24px;
@@ -188,13 +185,15 @@ section {
 .third > .form > h2 {
     color: black;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-weight: 200;
     font-size: 29px;
+    margin-top: 20px;
 }
 
 .social_media {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items:flex-end;
     margin-top: 180px;
 }
@@ -202,6 +201,10 @@ section {
 .social_media > a > img {
     width: 60px;
     margin: 10px;
+}
+
+#github_link {
+    transform: scale(0.9);
 }
 
 .form_inside {
@@ -262,7 +265,11 @@ section {
     rgba(98, 212, 222, 0.76));  
 }
 
-#pokedex > a > .overlay > .text > h3 {
+#gamingmovies > .overlay > .text > h3{
+    font-size: 26px;
+}
+
+#pokedex > .overlay > .text > h3 {
     letter-spacing: 3px;
 }
 
@@ -270,8 +277,9 @@ section {
     background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
 }
 
-#myFlix > a > h3 {
+#myFlix > h3 {
     color: black;
+    font-size: 33px;
 }
 
 #famchat {
@@ -283,7 +291,7 @@ section {
     background-color: grey;
 }
 
-#techevents > a > h3 {
+#techevents > h3 {
     color: tomato;
 }
 
@@ -295,19 +303,19 @@ section {
 #yours > a > h3 {
     color: black;
     font-family: 'Montserrat', sans-serif;
+    font-size: 33px;
 }
 
 .grid1 > a {
     text-decoration: none;
 }
 
-.grid1 > a > h3 {
+.grid1 > h3 {
     color: white;
     font-size: 33px;
-    
 }
 
-.grid1 > a > .overlay > .text {
+.grid1 > .overlay > .text {
     color: white;
     text-shadow: rgb(1, 7, 10) 3px 0px 0px, rgb(1, 7, 10) 2.83487px 0.981584px 0px, rgb(1, 7, 10) 2.35766px 1.85511px 0px, rgb(1, 7, 10) 1.62091px 2.52441px 0px, rgb(1, 7, 10) 0.705713px 2.91581px 0px, rgb(1, 7, 10) -0.287171px 2.98622px 0px, rgb(1, 7, 10) -1.24844px 2.72789px 0px, rgb(1, 7, 10) -2.07227px 2.16926px 0px, rgb(1, 7, 10) -2.66798px 1.37182px 0px, rgb(1, 7, 10) -2.96998px 0.42336px 0px, rgb(1, 7, 10) -2.94502px -0.571704px 0px, rgb(1, 7, 10) -2.59586px -1.50383px 0px, rgb(1, 7, 10) -1.96093px -2.27041px 0px, rgb(1, 7, 10) -1.11013px -2.78704px 0px, rgb(1, 7, 10) -0.137119px -2.99686px 0px, rgb(1, 7, 10) 0.850987px -2.87677px 0px, rgb(1, 7, 10) 1.74541px -2.43999px 0px, rgb(1, 7, 10) 2.44769px -1.73459px 0px, rgb(1, 7, 10) 2.88051px -0.838247px 0px;
     font-size: 29px;
@@ -315,20 +323,49 @@ section {
     letter-spacing: 2px;
 }
 
-.grid1 > a > .overlay > .text > h5 {
+.grid1 > .overlay > .text > h5 {
     text-shadow: none;
     color: black;
     font-size: 16px;
 }
 
-.grid1 > a > .overlay > .text > p {
+.grid1 > .overlay > a {
+    margin: 10px;
+}
+
+#yours > a > .overlay > .text > h5 {
+    text-shadow: none;
+    color: black;
+    font-size: 16px;
+}
+
+#yours > a > .overlay > .text {
+    color: white;
+    text-shadow: rgb(1, 7, 10) 3px 0px 0px, rgb(1, 7, 10) 2.83487px 0.981584px 0px, rgb(1, 7, 10) 2.35766px 1.85511px 0px, rgb(1, 7, 10) 1.62091px 2.52441px 0px, rgb(1, 7, 10) 0.705713px 2.91581px 0px, rgb(1, 7, 10) -0.287171px 2.98622px 0px, rgb(1, 7, 10) -1.24844px 2.72789px 0px, rgb(1, 7, 10) -2.07227px 2.16926px 0px, rgb(1, 7, 10) -2.66798px 1.37182px 0px, rgb(1, 7, 10) -2.96998px 0.42336px 0px, rgb(1, 7, 10) -2.94502px -0.571704px 0px, rgb(1, 7, 10) -2.59586px -1.50383px 0px, rgb(1, 7, 10) -1.96093px -2.27041px 0px, rgb(1, 7, 10) -1.11013px -2.78704px 0px, rgb(1, 7, 10) -0.137119px -2.99686px 0px, rgb(1, 7, 10) 0.850987px -2.87677px 0px, rgb(1, 7, 10) 1.74541px -2.43999px 0px, rgb(1, 7, 10) 2.44769px -1.73459px 0px, rgb(1, 7, 10) 2.88051px -0.838247px 0px;
+    font-size: 29px;
+    margin: 20px;
+    letter-spacing: 2px;
+}
+
+#yours > a > .overlay > .text > p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     color: black;
     text-shadow: none;
     font-size: smaller;
     margin: 20px;
-    font-size: 24px;
+    font-size: 20px;
+    letter-spacing: 0;
+}
+
+.grid1 > .overlay > .text > p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: black;
+    text-shadow: none;
+    font-size: smaller;
+    margin: 20px;
+    font-size: 20px;
     letter-spacing: 0;
 }
 
@@ -343,10 +380,6 @@ section {
     padding: 10px;
 }
 
-.grid1 > h3 {
-    text-align: center;
-    font-size: larger;
-}
 
 .grid1 .overlay {
     position: absolute;
@@ -589,7 +622,7 @@ section {
     .third > .form > h2 {
         color: black;
         font-family: 'Montserrat', sans-serif;
-        font-weight: 600;
+        font-weight: 400;
         font-size: 18px;
     }
    
@@ -647,10 +680,22 @@ section {
     }
   }
 
-  @media (max-width: 1280px) and (max-height: 800px) {
+  @media (max-width: 1300px) and (max-height: 800px) {
 
         nav {
             position: fixed;
             top: 13%;
+        }
+
+        #pokedex > .overlay > .text > p {
+            font-size: 18px;
+        }
+
+        #pokedex > .overlay > .text > h3 {
+            font-size: 26px;
+        }
+
+        #gamingmovies > .overlay > .text > h3 {
+            font-size: 24px;
         }
   }

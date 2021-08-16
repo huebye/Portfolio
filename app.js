@@ -1,6 +1,10 @@
-window.addEventListener('resize', getRightFlightPath());
-window.onresize = function(){ location.reload(); }
+window.onresize = getRightFlightPath();
+window.onresize = function(){ window.location.reload();}
 
+/**
+ * set the flightpath of the navigation icons 
+ * @returns flightPathNav
+ */
 function getRightFlightPath() {
     x = window.innerWidth;
     if (x > 1500) {
@@ -57,6 +61,7 @@ const tween1 = new TimelineLite();
 
 tween1.add(
     TweenLite.to('nav', 25, {
+        //bezier: recieving flightPathNav of specific window widths
         bezier: getRightFlightPath(),
         ease: Power1.easeInOut
     })
