@@ -629,7 +629,7 @@ section {
   }
 
 
-  @media (max-width: 385px) {
+  @media (max-width: 405px) {
     body {
         display: block;
         align-items: center;
